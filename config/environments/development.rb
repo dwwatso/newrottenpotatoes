@@ -61,5 +61,6 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   # Allow connections to local server.
-  config.hosts.clear
+  #config.hosts.clear
+  config.hosts << "dd6161ad62f446dc9a062d3289b6dd54.vfs.cloud9.us-west-2.amazonaws.com"
 end
