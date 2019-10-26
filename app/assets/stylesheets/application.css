@@ -52,9 +52,13 @@ table#movies th, table#movies td {
   text-align: left;
 }
 #notice, #warning {
-  background: rosybrown;
+  background: rgb(52,235,161);
   margin: 1em 0;
   padding: 4px;
+}
+.message {
+	color: red;
+	text-align: center;
 }
 form label {
   display: block;

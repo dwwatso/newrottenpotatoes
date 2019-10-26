@@ -1,6 +1,6 @@
-%h2 Create New Movie
+%h2 Edit Movie
 
-= form_tag movies_path, :method => :post do
+= form_tag movie_path(@movie), :method => :put do
 
 	= label :movie, :title, 'Title'
 	= text_field :movie, :title
