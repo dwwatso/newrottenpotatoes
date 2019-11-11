@@ -5,8 +5,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 #gem 'puma', '3.12.1'
@@ -41,7 +39,8 @@ gem 'omniauth-twitter'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  #gem 'sqlite3', '1.4.1'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '~> 1.4'
   #gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -67,6 +66,11 @@ group :test do
   #gem 'capybara',           '3.28.0'
   #gem 'selenium-webdriver', '3.142.4'
   #gem 'webdrivers',         '4.1.2'
+end
+
+group :production do
+  # Use postgresql as the database for Active Record
+  gem 'pg', '~> 1.1.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
