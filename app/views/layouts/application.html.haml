@@ -11,6 +11,9 @@
       #notice.message= flash[:notice]
     - elsif flash[:warning]
       #warning.message= flash[:warning]
+    #logo
+      %a{:href=>movies_path} Rotten Potatoes
+    = render :partial => 'sessions/login'
     #main
       = yield
     
