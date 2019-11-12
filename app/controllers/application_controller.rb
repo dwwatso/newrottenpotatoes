@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_filter :set_current_user
+  before_action :set_current_user
   protected
   def set_current_user
     @current_user ||= Moviegoer.where(:id => session[:user_id])
