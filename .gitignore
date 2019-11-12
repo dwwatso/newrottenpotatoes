@@ -7,6 +7,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore .env used for storing keys and access tokens
+.env
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
