@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  skip_filter :set_current_user
+  skip_action_callback :set_current_user
   def create
     auth=request.env["omniauth.auth"]
     user=Moviegoer.where(:provider => auth["provider"], 
