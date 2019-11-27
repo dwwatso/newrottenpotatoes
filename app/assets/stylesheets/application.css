@@ -2,7 +2,8 @@
 /* Add these lines to app/assets/stylesheets/application.css */
 
 html, body {
-  margin: 0;
+  margin-left: 45px;
+	margin-right: 30px;
   padding: 0;
   background: White;
   color: DarkSlateGrey;
@@ -62,6 +63,16 @@ table#movies th, table#movies td {
 }
 table#movies tr:hover {
 	background-color: yellow;
+}
+table#reviews {
+	width: 25%;
+	margin: 10px;
+	border: 1px solid gray;
+}
+table#reviews th, table#reviews td {
+  padding: 4px;
+  text-align: left;
+	border: 1px solid gray;
 }
 #notice, #warning {
   background: rgb(52,235,161);
